@@ -94,6 +94,23 @@ null
         //********************************************************************************************
 
 
+        // yukardaki sorguyu HQL Alias kullanarak yapalım
+//        String hqlQuery3 = "FROM Student01 std WHERE std.name='Miraç'";
+//        Student01 uniqueResult3= session.createQuery(hqlQuery3, Student01.class).uniqueResult();
+//        System.out.println(uniqueResult3);
+
+        // ****************************************************************
+        // grade değeri 90 olan öğrenciyi getirelim
+        String hqlQuery4 = "SELECT s.id,s.name FROM Student01 s WHERE s.grade=90"; // Student01 s
+        List<Object[]> resultList4 = session.createQuery(hqlQuery4).getResultList();
+        // createQuery metoduna tek parametre girdiğimiz için Student01 clası ile mappleme işlemi yapılmadı
+        // bu yüzden Object olarak aldık
+        for (Object[] object: resultList4) {
+            System.out.println(Arrays.toString(object));
+        }
+
+
+
 
 
         tx.commit();
