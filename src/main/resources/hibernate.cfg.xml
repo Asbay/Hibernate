@@ -36,6 +36,12 @@
         <property name="format_sql">true</property>
 
 
+        <!-- addAnnotatedClass() yapısını kullanmadan aşağıdaki gibi de Entity classlarımıeklliyebilirim
+  <mapping class="com.hb05.manytoone.Student05" />
+  <mapping class="com.hb05.manytoone.University" />
+  -->
+
+
     </session-factory>
 
 </hibernate-configuration>
