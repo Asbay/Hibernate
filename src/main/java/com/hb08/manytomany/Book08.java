@@ -50,7 +50,6 @@ public class Book08 {
         return "Book08{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", students=" + students +
                 '}';
     }
 }
