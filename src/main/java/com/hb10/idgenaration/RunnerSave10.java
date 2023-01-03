@@ -1,4 +1,4 @@
-package com.idgenaration;
+package com.hb10.idgenaration;
 
 
 import org.hibernate.Session;
